@@ -1,3 +1,10 @@
 .App {
   text-align: center;
+  border: 1px solid dodgerblue;
+  margin: 10% auto;
+  height: fit-content;
+  width: 50%;
+  border-radius: 1%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
