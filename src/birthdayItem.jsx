@@ -1,23 +1,15 @@
 import React from 'react';
-import {Media} from 'react-bootstrap';
+import {Media, Image} from 'react-bootstrap';
+import './App.css';
 
-const BirthdayItem = () => {
+const BirthdayItem = (props) => {
+  let {name, image, age} = props; // object destructuring
   return (
     <Media>
-      <img
-        width={64}
-        height={64}
-        className="mr-3"
-        src="holder.js/64x64"
-        alt="Generic placeholder"
-      />
+      <Image width={64} height={64} className="mr-3" src={image} alt="User" roundedCircle />
       <Media.Body>
-        <h5>Media Heading</h5>
-        <p>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-          commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
-          condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </p>
+        <h5>{name}</h5>
+        <p className="font-weight-bold">{age} Years</p>
       </Media.Body>
     </Media>
   );
