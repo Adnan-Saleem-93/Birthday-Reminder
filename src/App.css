@@ -1,8 +1,8 @@
 .App {
-  border: 3px solid #bb88b5;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   margin: 10% auto;
   height: fit-content;
-  width: 35%;
+  width: 25rem;
   border-radius: 0.5rem;
   padding: 2rem;
   box-sizing: border-box;
@@ -20,4 +20,7 @@
 }
 .media-body p {
   color: gray;
+}
+.btn {
+  background-color: #555a5e;
 }
